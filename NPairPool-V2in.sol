@@ -41,7 +41,7 @@ contract NPairPool_V2in is Ownable {
     * () will be defined the unit of measure
     * @param _srcToken token to be invested
     * @param _destToken token to be recived
-    * @param _typeAMM type of AMM (0 = 1Inch, 1 = Paraswap)
+    * @param _typeAMM type of AMM
     * @return bool successfully completed
     */
     function listNewPair(address _srcToken, address _destToken, uint _typeAMM) public onlyOwner returns(bool) {
@@ -66,7 +66,7 @@ contract NPairPool_V2in is Ownable {
     * @param _id of the pair to be locked
     * @param _srcToken parameter to be modified, if 0 will be ignored
     * @param _destToken parameter to be modified, if 0 will be ignored
-    * @param _typeAMM type of AMM (0 = 1Inch, 1 = Paraswap), if 0 will be ignored
+    * @param _typeAMM type of AMM, if 0 will be ignored
     */
     function modifyPair(
         uint256 _id,
